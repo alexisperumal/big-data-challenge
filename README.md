@@ -1,7 +1,7 @@
 # big-data-challenge
 UCSD Data Science HW #22 - Big Data
 
-### ObjectiveRDS.
+### Objective
 
 
 • Level 1: Pull Amazon reviews from two different datasets of choice (video games and books selected), in a Google Collab notebook running Spark SQL. Do ETL on the data (remove blanks, duplicaes, etc.) and write to specified SQL database tables in AWS RDS.
