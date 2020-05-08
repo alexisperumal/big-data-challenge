@@ -20,7 +20,7 @@ Across the database of 4.9M reviews examined (4,292 by Vine Reviewers), the vine
 
 • UCSD_HW22_L1_video_games.ipynb - Notebook file, running pyspark in Google Collab, used to do ETL on videogame data. https://github.com/alexisperumal/big-data-challenge/blob/master/level-1/UCSD_HW22_L1_video_games.ipynb
 
-• UCSD_HW22_L1_video_games.ipynb - Notebook file, running pyspark in Google Collab, used to do ETL on book data. https://github.com/alexisperumal/big-data-challenge/blob/master/level-1/UCSD_HW22_L1_books.ipynb 
+• UCSD_HW22_L1_books.ipynb - Notebook file, running pyspark in Google Collab, used to do ETL on book data. https://github.com/alexisperumal/big-data-challenge/blob/master/level-1/UCSD_HW22_L1_books.ipynb 
 
 • video_games.sql - SQL script used to generate the tables in the AWS RDS DB prior to the loading from the pyspark scripts. https://github.com/alexisperumal/big-data-challenge/blob/master/level-1/video_games.sql
 
