@@ -1,10 +1,3 @@
--- Drop the tables if they exist so we start clean
-DROP TABLE review_id_table;
-DROP TABLE products;
-DROP TABLE customers;
-DROP TABLE vine_table;
-
-
 -- Create the tables with the specified schemas
 CREATE TABLE review_id_table (
   review_id TEXT PRIMARY KEY NOT NULL,
@@ -58,10 +51,16 @@ LIMIT 10;
 
 SELECT COUNT(*) FROM vine_table;
 
------
+-- Level 2 Analysis
 
-SELECT * FROM products WHERE product_id = '0001714422';
+SELECT AVG(star_rating) FROM vine_table;
+
+SELECT vine, count(star_rating) as count,
+round(AVG(star_rating),4) as rating_mean,
+round(STDDEV_SAMP(star_rating),4) as rating_sd
+FROM vine_table GROUP BY vine;
 
 
-SELECT * FROM products WHERE product_id = '0439394422';
+
+
 
