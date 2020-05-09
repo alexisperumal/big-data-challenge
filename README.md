@@ -31,6 +31,6 @@ When we looked only at the 636K reviews by customers who posted 5 or more review
 
 • bias_analysis.sql - SQL script used to query the RDS database in AWS and generate review stats. https://github.com/alexisperumal/big-data-challenge/blob/master/level-2/bias_analysis.sql
 
-• bias_analysis.xlsx - Statistical Hypothosis Testing analysis of potential bias in reviews by Vine reviewers. https://github.com/alexisperumal/big-data-challenge/blob/master/level-2/bias_analysis.xlsx
+• bias_analysis.xlsx - Statistical Hypothosis Testing analysis of potential bias in reviews by Vine reviewers. View both tabs to see both analysis. https://github.com/alexisperumal/big-data-challenge/blob/master/level-2/bias_analysis.xlsx
 
 
