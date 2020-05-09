@@ -11,7 +11,10 @@ UCSD Data Science HW #22 - Big Data
 
 ### Conclusion
 
-Across the database of 4.9M reviews examined (4,292 by Vine Reviewers), the vine reviewers DID have a higher average review with >95% statistical significance (3.2 t-stat, 0.07% p-value). Vine reviewers averaged a 4.14 rating whereas non Vine reviewers averaged 4.08.
+Across the database of 4.9M reviews examined (4,292 by Vine Reviewers, 4.9M by non-Vine Reviewers), the vine reviewers DID have a higher average review with >95% statistical significance (3.2 t-stat, 0.07% p-value). Vine reviewers averaged a 4.14 rating whereas non Vine reviewers averaged 4.08.
+
+However...
+When we looked only at the 636K reviews by customers who posted 5 or more reviews (2,622 Vine reviewers, 634K non-Vine), we got very different results on the bias analysis. Vine reviewers had an average rating of 4.06 compared to 4.27 by non-Vine reviewers. Obviouosly, this causes us to accept the null hypothesis that Vine reviewers don't post higher ratings. Note that due to the way the data is structured, we only have review counts on reviewers of video games, not books. So, unlike the prior analysis which looked at video game and book reviews, this analysis is on those video games only.
 
 
 ### Key Files
