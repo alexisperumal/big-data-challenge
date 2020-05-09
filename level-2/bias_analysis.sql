@@ -55,12 +55,39 @@ SELECT COUNT(*) FROM vine_table;
 
 SELECT AVG(star_rating) FROM vine_table;
 
+-- Basic comparison of vine and non-vine reviews:
 SELECT vine, count(star_rating) as count,
 round(AVG(star_rating),4) as rating_mean,
 round(STDDEV_SAMP(star_rating),4) as rating_sd
 FROM vine_table GROUP BY vine;
 
+-- Exploration...
+select customer_count, customer_id from customers group by customer_count, customer_id
+order by customer_count DESC LIMIT 100;
 
+select customer_count, count(customer_count) from customers
+-- where customer_count = 909
+group by customer_count
+order by count(customer_count), customer_count DESC;
 
+select * from customers where customer_id = 52759271;
 
+-- Filter out reviews from reviewers without many reviews. This requires two joins.
+select * from vine_table
+inner join review_id_table ON vine_table.review_id = review_id_table.review_id
+inner join customers ON review_id_table.customer_id = customers.customer_id
+where customers.customer_count > 5
+limit 5;
+
+-- Filter out reviews from reviewers without many reviews. This requires two joins.
+SELECT vine,
+		count(star_rating) as count,
+		round(AVG(star_rating),6) as rating_mean,
+		round(STDDEV_SAMP(star_rating),6) as rating_sd
+FROM vine_table
+inner join review_id_table ON vine_table.review_id = review_id_table.review_id
+inner join customers ON review_id_table.customer_id = customers.customer_id
+where customers.customer_count > 5
+GROUP BY vine
+;
 
